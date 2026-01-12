@@ -3,4 +3,5 @@ main = "src/index.js"
 compatibility_date = "2024-12-01"
 
 [[durable_objects]]
-bindings = [{ name = "CHAT_ROOM", class_name = "Room" }]
+name = "CHAT_ROOM"
+class_name = "Room"
