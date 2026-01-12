@@ -1,0 +1,17 @@
+name = "my-chat-app"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+account_id = "YOUR_ACCOUNT_ID"
+
+[env.production]
+zone_id = "YOUR_ZONE_ID"
+
+[[durable_objects]]
+name = "CHAT_ROOM"
+class_name = "Room"
+
+[durable_objects.bindings]
+CHAT_ROOM = { class_name = "Room" }
+
+[build.upload]
+format = "modules"
